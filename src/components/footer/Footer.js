@@ -25,14 +25,14 @@ function Footer() {
             Company Registration Number: 21479524.
           </p>
         </div>
-        <div>
+        <div className={classes.col2}>
           <p className={classes.title}>About</p>
           <a>Profile</a>
           <a>Features</a>
           <a>Careers</a>
           <a>DW News</a>
         </div>
-        <div>
+        <div className={classes.col2}>
           <p className={classes.title}>Help</p>
           <a>Support</a>
           <a>Sign up</a>
@@ -40,7 +40,7 @@ function Footer() {
           <a>Reports</a>
           <a>Q&A</a>
         </div>
-        <div>
+        <div className={classes.col3}>
           <p className={classes.title}>Social Media</p>
           <div className={classes.box}>
             <svg

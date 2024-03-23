@@ -3,6 +3,7 @@
   width: 100%;
   border-top: 2px solid var(--violet);
   padding: 100px 0;
+  position: relative;
 }
 
 .container {
@@ -25,7 +26,10 @@
   max-width: 400px;
   margin-bottom: 80px;
 }
-
+.col2 {
+  display: flex;
+  flex-direction: column;
+}
 .logo {
   display: flex;
   justify-content: flex-start;
@@ -76,6 +80,9 @@
 }
 
 .circle {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -103,10 +110,11 @@
   .box {
     justify-content: center;
   }
-  .footer a{
-    margin-left: 10px;
+  .col2 {
+    flex-direction: row;
+    gap: 10px;
   }
-  .circle{
+  .circle {
     margin-top: 20px;
     margin-left: auto;
   }

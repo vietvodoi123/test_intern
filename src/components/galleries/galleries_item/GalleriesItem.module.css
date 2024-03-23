@@ -1,8 +1,9 @@
 .carousel-item {
-  display: inline-flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: 1fr 2fr;
   justify-content: center;
-  height: 300px;
+  height: auto;
   border-radius: 50px;
   background-color: #fff;
 }
@@ -15,6 +16,11 @@
   color: #617d98;
 }
 .carousel-img {
-  width: 250px;
+  width: 100%;
   padding: 0 20px 0 20px;
+}
+@media (max-width: 728px) {
+  .carousel-item {
+    grid-template-columns: 1fr;
+  }
 }
