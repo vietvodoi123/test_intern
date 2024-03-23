@@ -5,7 +5,7 @@ export const UserContext = createContext();
 
 function UserContextProvide({ children }) {
   const [user, setUser] = useState(null);
-  const [page, setPage] = useState("profile");
+  const [page, setPage] = useState("");
   //type User {
   //   "accessToken": "string",
   //   "refreshToken": "string"
