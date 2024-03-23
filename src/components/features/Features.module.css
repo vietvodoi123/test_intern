@@ -1,0 +1,32 @@
+.features {
+  margin: 164px auto 0 auto;
+}
+.features_header {
+  margin: 0 auto 68px auto;
+  text-align: center;
+  width: 50%;
+}
+.features_title {
+  color: var(--text-color-2);
+  font-family: Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.features_desc {
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.features_content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}

@@ -1,0 +1,93 @@
+.footer {
+  margin-top: 90px;
+  width: 100%;
+  border-top: 2px solid var(--violet);
+  padding: 100px 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 4.5fr 1fr 1fr 2fr;
+  gap: 50px;
+  width: 1120px;
+  height: 500px;
+  margin: 0 auto;
+  font-family: Avenir, Arial, sans-serif;
+}
+.col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  gap: 30px;
+  max-width: 400px;
+  margin-bottom: 80px;
+}
+.name {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 32px;
+  text-align: left;
+}
+.address {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28.8px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 90px;
+}
+.coppyRight {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.title {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 25.6px;
+  text-align: left;
+  margin-bottom: 60px;
+}
+.footer a {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.circle {
+  margin-left: auto;
+  margin-top: 320px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgba(156, 105, 226, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle svg {
+  fill: var(--violet);
+}

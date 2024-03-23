@@ -1,0 +1,55 @@
+.main_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.query {
+  width: 600px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.query input {
+  padding: 12px 20px;
+  border: 1px solid var(--text-color);
+  border-radius: 6px;
+  width: 45%;
+}
+.query input:placeholder {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+  text-align: left;
+}
+.query select {
+  font-size: 15px;
+  width: 45%;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid var(--text-color);
+  padding: 12px 20px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.query select:hover {
+  background-color: #f0f0f0;
+}
+
+.query select:focus {
+  background-color: #e8e8e8;
+}
+
+.query select option {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Tùy chỉnh màu nền và màu chữ khi hover trên option */
+.query select option:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}

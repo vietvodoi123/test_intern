@@ -1,0 +1,69 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.modal {
+  color: var(--text-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  z-index: 11;
+  padding: 20px;
+  width: 600px;
+  transition: all ease-in-out 0.5s;
+}
+.modal button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.header h2 {
+  font-size: 24px;
+  color: var(--text-color-2);
+}
+.header button {
+  font-size: 24px;
+  color: var(--text-color);
+}
+.radio_box {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.checkbox {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.btn_create {
+  background-color: var(--violet) !important;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-top: 40px;
+  color: white;
+  font-weight: 600;
+}
+.input_error {
+  position: absolute;
+  bottom: -25px;
+  color: var(--violet);
+}
