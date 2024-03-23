@@ -24,3 +24,14 @@
   margin: 0 auto;
   position: relative;
 }
+@media (max-width: 1280px) {
+  .main{
+    width: 90%;
+  }
+}
+@media (max-with:680px){
+  .main{
+    width: 100%;
+    padding: 0 15px;
+  }
+}

@@ -65,7 +65,11 @@
   border: none;
   cursor: pointer;
 }
-
+.nodata{
+  width: 100%;
+  border-radius: 30px;
+  height: 300px;
+}
 .indicator-symbol {
   color: #26343f;
 }
@@ -123,4 +127,62 @@
 /* Hiển thị radio button được chọn */
 .radio-input:checked + .radio-background .radio-inner {
   display: block;
+}
+
+.icon{
+  font-size: 40px;
+}
+/* Responsive cho các kích thước màn hình nhỏ hơn hoặc bằng 768px */
+@media (max-width: 768px) {
+  .galleries {
+    padding: 40px; /* Giảm padding cho thành phần galleries */
+  }
+
+  .title {
+    font-size: 30px; /* Giảm kích thước tiêu đề */
+    margin-bottom: 60px; /* Giảm margin-bottom cho tiêu đề */
+  }
+
+  .carousel-buttons {
+    align-items: center; /* Căn chỉnh nút chuyển slide vào giữa */
+  }
+  .button-arrow{
+    position: relative;
+  }
+
+  .left,
+  .right {
+    position: static; /* Bỏ thuộc tính position: absolute */
+    margin-top: 10px; /* Tăng khoảng cách giữa nút chuyển slide */
+    margin-bottom: 10px; /* Tăng khoảng cách giữa nút chuyển slide */
+    transform: translate(0,10%);
+  }
+  .indicators{
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .icon{
+    font-size: 28px;
+  }
+}
+
+/* Responsive cho các kích thước màn hình nhỏ hơn hoặc bằng 480px */
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px; /* Giảm kích thước tiêu đề */
+    margin-bottom: 40px; /* Giảm margin-bottom cho tiêu đề */
+  }
+
+  .carousel-buttons {
+    padding: 0 20px; /* Tăng padding cho nút chuyển slide */
+  }
+
+  .left,
+  .right {
+    margin-top: 5px; /* Tăng khoảng cách giữa nút chuyển slide */
+    margin-bottom: 5px; /* Tăng khoảng cách giữa nút chuyển slide */
+  }
+  .icon{
+    font-size: 22px;
+  }
 }

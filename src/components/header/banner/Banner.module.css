@@ -39,3 +39,32 @@
   bottom: -30px;
   right: 0;
 }
+/* Responsive cho màn hình nhỏ hơn hoặc bằng 768px */
+@media (max-width: 768px) {
+  .banner{
+    margin-top: 50px;
+  }
+  .banner_title {
+    width: auto; /* Đảm bảo tiêu đề co dãn */
+    height: auto; /* Đảm bảo tiêu đề co dãn */
+    font-size: 40px; /* Giảm kích thước tiêu đề */
+    line-height: 48px; /* Điều chỉnh line height cho tiêu đề */
+    margin-bottom: 30px;
+  }
+
+  .banner_desc {
+    width: auto; /* Đảm bảo mô tả co dãn */
+    height: auto; /* Đảm bảo mô tả co dãn */
+    font-size: 14px; /* Giảm kích thước mô tả */
+    line-height: 22px; /* Điều chỉnh line height cho mô tả */
+    top: 200px; /* Điều chỉnh vị trí mô tả */
+    left: 50%; /* Điều chỉnh vị trí mô tả */
+  }
+
+  .banner_img {
+    width: 100%; /* Đảm bảo hình ảnh co dãn theo chiều rộng */
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị méo */
+    bottom: -100px; /* Điều chỉnh vị trí hình ảnh */
+    right: 0; /* Điều chỉnh vị trí hình ảnh */
+  }
+}

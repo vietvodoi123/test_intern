@@ -4,82 +4,78 @@
   border-top: 2px solid var(--violet);
   padding: 100px 0;
 }
+
 .container {
-  display: grid;
-  grid-template-columns: 4.5fr 1fr 1fr 2fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 50px;
-  width: 1120px;
-  height: 500px;
+  width: 90%;
+  max-width: 1120px;
   margin: 0 auto;
   font-family: Avenir, Arial, sans-serif;
 }
+
 .col1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
+  flex-basis: 100%;
+  max-width: 400px;
+  margin-bottom: 80px;
 }
+
 .logo {
   display: flex;
   justify-content: flex-start;
   align-items: end;
   gap: 30px;
-  max-width: 400px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
+
 .name {
   font-size: 20px;
   font-weight: 900;
   line-height: 32px;
   text-align: left;
 }
-.address {
+
+.address,
+.info,
+.coppyRight {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 28.8px;
   letter-spacing: 0.01em;
   text-align: left;
   margin-bottom: 30px;
 }
-.info {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28.8px;
-  letter-spacing: 0.01em;
-  text-align: left;
-  margin-bottom: 90px;
-}
-.coppyRight {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 21.6px;
-  letter-spacing: 0.01em;
-  text-align: left;
-}
+
 .title {
   font-size: 16px;
   font-weight: 900;
   line-height: 25.6px;
   text-align: left;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
+
 .footer a {
-  display: block;
   font-size: 16px;
   font-weight: 400;
   line-height: 40px;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
+
 .box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
+
 .circle {
-  margin-left: auto;
-  margin-top: 320px;
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -88,6 +84,30 @@
   justify-content: center;
   align-items: center;
 }
+
 .circle svg {
   fill: var(--violet);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col1 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .box {
+    justify-content: center;
+  }
+  .footer a{
+    margin-left: 10px;
+  }
+  .circle{
+    margin-top: 20px;
+    margin-left: auto;
+  }
 }

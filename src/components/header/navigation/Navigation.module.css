@@ -2,3 +2,13 @@
   display: flex;
   margin-top: 48px;
 }
+@media (max-width:768px) {
+  .navigation{
+    margin-top: 32px;
+  }
+}
+@media (max-width: 576px) {
+  .navigation {
+    margin-top: 24px;
+  }
+}

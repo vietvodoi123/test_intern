@@ -74,3 +74,99 @@
   /* font-weight: 900; */
   color: var(--violet);
 }
+@media (max-width: 768px) {
+  .img {
+    width: 120px; /* Giảm kích thước ảnh */
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị méo */
+    left: 20px; /* Điều chỉnh vị trí ảnh */
+    top: 50px; /* Điều chỉnh vị trí ảnh */
+  }
+
+  .retangle {
+    width: 220px; /* Giảm kích thước hình chữ nhật */
+    border-bottom-width: 252px; /* Điều chỉnh kích thước hình chữ nhật */
+  }
+
+  .skevy {
+    width: 80px; /* Giảm kích thước phần nền */
+    height: 250px; /* Điều chỉnh kích thước phần nền */
+    left: 100px; /* Điều chỉnh vị trí phần nền */
+    top: -10px; /* Điều chỉnh vị trí phần nền */
+  }
+
+  .content {
+    width: 50%;
+    height: auto; /* Đảm bảo nội dung co dãn */
+    right: 20px; /* Điều chỉnh vị trí phần nội dung */
+    top: 20px; /* Điều chỉnh vị trí phần nội dung */
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 20px; /* Giảm kích thước tiêu đề */
+    line-height: 26px; /* Điều chỉnh line height cho tiêu đề */
+  }
+
+  .desc {
+    font-size: 14px; /* Giảm kích thước mô tả */
+    line-height: 22px; /* Điều chỉnh line height cho mô tả */
+    width: auto; /* Đảm bảo mô tả co dãn */
+  }
+
+  .btn {
+    font-size: 14px; /* Giảm kích thước nút */
+    line-height: 22px; /* Điều chỉnh line height cho nút */
+  }
+
+  .icon_right {
+    font-size: 32px; /* Giảm kích thước biểu tượng */
+  }
+}
+@media (max-width: 1080px){
+  .img {
+    width: 140px; /* Giảm kích thước ảnh */
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị méo */
+    left: 20px; /* Điều chỉnh vị trí ảnh */
+    top: 50px; /* Điều chỉnh vị trí ảnh */
+  }
+
+  .retangle {
+    width: 220px; /* Giảm kích thước hình chữ nhật */
+    border-bottom-width: 252px; /* Điều chỉnh kích thước hình chữ nhật */
+  }
+
+  .skevy {
+    width: 80px; /* Giảm kích thước phần nền */
+    height: 250px; /* Điều chỉnh kích thước phần nền */
+    left: 100px; /* Điều chỉnh vị trí phần nền */
+    top: -10px; /* Điều chỉnh vị trí phần nền */
+  }
+
+  .content {
+    width: 50%;
+    height: auto; /* Đảm bảo nội dung co dãn */
+    right: 20px; /* Điều chỉnh vị trí phần nội dung */
+    top: 20px; /* Điều chỉnh vị trí phần nội dung */
+    gap: 15px;
+  }
+
+  .title {
+    font-size: 20px; /* Giảm kích thước tiêu đề */
+    line-height: 26px; /* Điều chỉnh line height cho tiêu đề */
+  }
+
+  .desc {
+    font-size: 14px; /* Giảm kích thước mô tả */
+    line-height: 22px; /* Điều chỉnh line height cho mô tả */
+    width: auto; /* Đảm bảo mô tả co dãn */
+  }
+
+  .btn {
+    font-size: 14px; /* Giảm kích thước nút */
+    line-height: 22px; /* Điều chỉnh line height cho nút */
+  }
+
+  .icon_right {
+    font-size: 32px; /* Giảm kích thước biểu tượng */
+  }
+}

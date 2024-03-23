@@ -70,6 +70,18 @@ function Galleries() {
               </span>
             </div>
           )}
+          {!loading && data.length===0 &&<div
+              style={{
+                backgroundColor: "white",
+                borderRadius: "50px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "100%",
+                height: "300px",
+              }}
+            >
+            </div>}
           {!loading &&
             data &&
             data.map((item) => {
@@ -78,7 +90,7 @@ function Galleries() {
         </div>
 
         <div className={classes["carousel-buttons"]}>
-          <button
+          {!loading&&data.length!==0&& <button
             className={classes["button-arrow"] + " " + classes.left}
             onClick={() => {
               updateIndex(currentSlide - 1);
@@ -86,8 +98,8 @@ function Galleries() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
+              width="16"
+              height="16"
               fill="currentColor"
               className={"bi bi-arrow-left " + classes.icon}
               viewBox="0 0 16 16"
@@ -97,7 +109,7 @@ function Galleries() {
                 d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
               />
             </svg>
-          </button>
+          </button>}
           <div className={classes["indicators"]}>
             {!loading &&
               data &&
@@ -122,7 +134,7 @@ function Galleries() {
                 );
               })}
           </div>
-          <button
+          {!loading &&  data.length!==0&&        <button
             className={classes["button-arrow"] + " " + classes.right}
             onClick={() => {
               updateIndex(currentSlide + 1);
@@ -130,8 +142,8 @@ function Galleries() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
+              width="16"
+              height="16"
               fill="currentColor"
               className={"bi bi-arrow-right " + classes.icon}
               viewBox="0 0 16 16"
@@ -141,7 +153,7 @@ function Galleries() {
                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
               />
             </svg>
-          </button>
+          </button>}
         </div>
       </div>
     </section>

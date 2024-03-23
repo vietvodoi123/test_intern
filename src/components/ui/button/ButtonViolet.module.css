@@ -13,3 +13,20 @@
   opacity: 0.9;
   transform: scale(1.05);
 }
+/* CSS cho màn hình nhỏ hơn hoặc bằng 768px */
+@media (max-width: 768px) {
+  .btn_violet {
+    width: 160px;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
+
+/* CSS cho màn hình nhỏ hơn hoặc bằng 576px */
+@media (max-width: 576px) {
+  .btn_violet {
+    width: 120px;
+    padding: 8px 0;
+    font-size: 12px;
+  }
+}

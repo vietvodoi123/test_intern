@@ -31,6 +31,7 @@ function useHttps() {
               ? req.config.headers["Content-Type"]
               : "application/json",
           Authorization: authorizationHeader,
+          mode:'no-cors'
         },
         body: req.body ? JSON.stringify(req.body) : null,
       };

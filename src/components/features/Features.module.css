@@ -30,3 +30,51 @@
   grid-template-columns: 1fr 1fr;
   gap: 50px;
 }
+
+/* Responsive cho màn hình nhỏ hơn hoặc bằng 768px */
+@media (max-width: 768px) {
+  .features_header {
+    width: 80%; /* Giảm chiều rộng của features_header */
+    margin-bottom: 40px; /* Giảm margin bottom */
+  }
+  .features_content{
+    gap: 30px;
+  }
+  .features_title {
+    font-size: 32px; /* Giảm kích thước font cho tiêu đề */
+    line-height: 42px; /* Giảm line height cho tiêu đề */
+    margin-bottom: 30px; /* Giảm margin bottom */
+  }
+
+  .features_desc {
+    font-size: 16px; /* Giảm kích thước font cho mô tả */
+    line-height: 26px; /* Giảm line height cho mô tả */
+  }
+}
+
+/* Responsive cho màn hình nhỏ hơn hoặc bằng 576px */
+@media (max-width: 576px) {
+  .features {
+    margin-top: 100px; /* Giảm margin top */
+  }
+
+  .features_header {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+  }
+
+  .features_title {
+    font-size: 24px; /* Giảm kích thước font cho tiêu đề */
+    line-height: 32px; /* Giảm line height cho tiêu đề */
+    margin-bottom: 20px; /* Giảm margin bottom */
+  }
+
+  .features_desc {
+    font-size: 14px; /* Giảm kích thước font cho mô tả */
+    line-height: 22px; /* Giảm line height cho mô tả */
+  }
+
+  .features_content {
+    grid-template-columns: 1fr; /* Hiển thị mỗi phần tử trên một hàng */
+    gap: 20px; /* Giảm khoảng cách giữa các phần tử */
+  }
+}
