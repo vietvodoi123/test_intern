@@ -25,13 +25,24 @@
   position: relative;
 }
 @media (max-width: 1280px) {
-  .main{
+  .main {
     width: 90%;
   }
 }
-@media (max-with:680px){
-  .main{
+@media (max-with: 680px) {
+  .main {
     width: 100%;
     padding: 0 15px;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    left: 0; /* Khi bắt đầu animation, slider ở vị trí ban đầu */
+  }
+  100% {
+    left: calc(
+      100% - 100px
+    ); /* Khi kết thúc animation, slider dời sang phải đến cuối cùng */
   }
 }

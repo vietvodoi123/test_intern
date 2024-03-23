@@ -1,21 +1,24 @@
 .main_header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 35px;
-}
-.query {
-  width: 600px;
-  margin-left: auto;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-bottom: 35px;
+}
+.query {
+  width: 100%;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2%;
 }
 .query input {
   padding: 12px 20px;
   border: 1px solid var(--text-color);
   border-radius: 6px;
-  width: 45%;
 }
+
 .query input:placeholder {
   font-family: Inter;
   font-size: 15px;
@@ -25,7 +28,6 @@
 }
 .query select {
   font-size: 15px;
-  width: 45%;
   background-color: transparent;
   color: #333;
   border: 1px solid var(--text-color);
@@ -52,4 +54,23 @@
 .query select option:hover {
   background-color: #f0f0f0;
   color: #333;
+}
+
+/* Sử dụng media queries để điều chỉnh giao diện cho các kích thước màn hình khác nhau */
+@media (max-width: 768px) {
+  .main_header {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .query {
+    grid-template-columns: 1fr; /* Sắp xếp các thành phần theo chiều dọc */
+  }
+
+  .query input,
+  .query select {
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 5px 8px;
+    /* Thêm khoảng cách giữa các thành phần */
+  }
 }

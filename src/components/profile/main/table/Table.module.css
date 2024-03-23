@@ -17,7 +17,12 @@ table td {
   border: 1px solid var(--text-color);
   background-color: var(--gray);
 }
-
+table td:first-child {
+  padding: 2px;
+  white-space: nowrap; /* Ngăn ngừa từ bị ngắt dòng */
+  overflow: hidden; /* Ẩn bất kỳ nội dung nào vượt quá chiều rộng của ô */
+  text-overflow: ellipsis;
+}
 table button {
   background-color: transparent;
   border: none;
@@ -31,3 +36,14 @@ table button:first-child {
   text-wrap: nowrap;
   text-overflow: ellipsis;
 } */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+  table td {
+    padding: 2px;
+    white-space: nowrap; /* Ngăn ngừa từ bị ngắt dòng */
+    overflow: hidden; /* Ẩn bất kỳ nội dung nào vượt quá chiều rộng của ô */
+    text-overflow: ellipsis;
+  }
+}

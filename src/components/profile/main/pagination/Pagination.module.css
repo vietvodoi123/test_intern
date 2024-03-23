@@ -18,3 +18,9 @@
   background-color: var(--violet);
   color: white;
 }
+
+@media (max-width: 728px) {
+  .pagination button {
+    padding: 5px 10px;
+  }
+}

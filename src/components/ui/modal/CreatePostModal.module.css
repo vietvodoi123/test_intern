@@ -17,8 +17,7 @@
   border-radius: 10px;
   z-index: 11;
   padding: 20px;
-  width: 600px;
-  transition: all ease-in-out 0.5s;
+  width: 500px;
 }
 .modal button {
   background-color: transparent;
@@ -66,4 +65,13 @@
   position: absolute;
   bottom: -25px;
   color: var(--violet);
+}
+@media (max-width: 728px) {
+  .modal {
+    width: 300px !important;
+    font-size: 14px;
+  }
+  .header {
+    font-size: 24px;
+  }
 }

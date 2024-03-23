@@ -4,3 +4,8 @@
   height: 100vh;
 }
 
+@media (max-width: 1180px) {
+  .profile_container {
+    grid-template-columns: 50px 1fr;
+  }
+}
