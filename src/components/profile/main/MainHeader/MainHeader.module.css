@@ -6,7 +6,6 @@
   margin-bottom: 35px;
 }
 .query {
-  width: 100%;
   margin-left: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -56,14 +55,13 @@
   color: #333;
 }
 
-/* Sử dụng media queries để điều chỉnh giao diện cho các kích thước màn hình khác nhau */
 @media (max-width: 768px) {
   .main_header {
     margin-top: 20px;
     gap: 20px;
   }
   .query {
-    grid-template-columns: 1fr; /* Sắp xếp các thành phần theo chiều dọc */
+    grid-template-columns: 1fr;
   }
 
   .query input,
@@ -71,6 +69,5 @@
     font-size: 14px;
     margin-bottom: 5px;
     padding: 5px 8px;
-    /* Thêm khoảng cách giữa các thành phần */
   }
 }

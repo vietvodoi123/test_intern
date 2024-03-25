@@ -1,26 +1,36 @@
 .carousel-item {
-  display: grid;
+  display: inline-flex;
   align-items: center;
-  grid-template-columns: 1fr 2fr;
   justify-content: center;
-  height: auto;
+  min-height: 300px;
   border-radius: 50px;
   background-color: #fff;
 }
-
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
 .carousel-item-text {
   font-size: 1.15rem;
-  margin: 40px 0 40px 0;
-  padding: 0 20px 0 20px;
   white-space: normal;
   color: #617d98;
 }
 .carousel-img {
-  width: 100%;
+  width: 250px;
   padding: 0 20px 0 20px;
 }
-@media (max-width: 728px) {
-  .carousel-item {
-    grid-template-columns: 1fr;
+@media (max-width: 872px) {
+  .content {
+    flex-direction: column;
+  }
+  .carousel-img {
+    width: 80%;
+    height: auto;
+  }
+  .carousel-item-text {
+    font-size: 16px;
   }
 }

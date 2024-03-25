@@ -18,6 +18,7 @@
   z-index: 11;
   padding: 20px;
   width: 500px;
+  animation: hiendan 0.3s ease-out;
 }
 .modal button {
   background-color: transparent;
@@ -73,5 +74,14 @@
   }
   .header {
     font-size: 24px;
+  }
+}
+
+@keyframes hiendan {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

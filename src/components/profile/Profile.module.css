@@ -1,11 +1,19 @@
 .profile_container {
   display: grid;
   grid-template-columns: 320px 1fr;
+  gap: 100px;
   height: 100vh;
 }
 
 @media (max-width: 1180px) {
   .profile_container {
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 50px minmax(600px, 1000px);
+    gap: 50px;
+  }
+}
+@media (max-width: 728px) {
+  .profile_container {
+    grid-template-columns: 35px minmax(250px, 600px);
+    gap: 30px;
   }
 }

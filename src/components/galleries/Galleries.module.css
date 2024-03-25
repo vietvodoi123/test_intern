@@ -65,7 +65,7 @@
   border: none;
   cursor: pointer;
 }
-.nodata{
+.nodata {
   width: 100%;
   border-radius: 30px;
   height: 300px;
@@ -129,7 +129,7 @@
   display: block;
 }
 
-.icon{
+.icon {
   font-size: 40px;
 }
 /* Responsive cho các kích thước màn hình nhỏ hơn hoặc bằng 768px */
@@ -146,7 +146,7 @@
   .carousel-buttons {
     align-items: center; /* Căn chỉnh nút chuyển slide vào giữa */
   }
-  .button-arrow{
+  .button-arrow {
     position: relative;
   }
 
@@ -155,13 +155,13 @@
     position: static; /* Bỏ thuộc tính position: absolute */
     margin-top: 10px; /* Tăng khoảng cách giữa nút chuyển slide */
     margin-bottom: 10px; /* Tăng khoảng cách giữa nút chuyển slide */
-    transform: translate(0,10%);
+    transform: translate(0, 10%);
   }
-  .indicators{
+  .indicators {
     margin-top: 10px;
     gap: 10px;
   }
-  .icon{
+  .icon {
     font-size: 28px;
   }
 }
@@ -182,7 +182,7 @@
     margin-top: 5px; /* Tăng khoảng cách giữa nút chuyển slide */
     margin-bottom: 5px; /* Tăng khoảng cách giữa nút chuyển slide */
   }
-  .icon{
+  .icon {
     font-size: 22px;
   }
 }

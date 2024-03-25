@@ -49,12 +49,12 @@ function Table({ posts, setReload, tags, reload }) {
         </thead>
         <tbody>
           {!loading &&
-            posts.map((row) => (
+            posts.map((row, i) => (
               <tr key={row.id}>
-                <td>{row.id}</td>
-                <td style={{ width: "200px" }}>{row.title}</td>
-                <td style={{ width: "200px" }}>{row.description}</td>
-                <td style={{ width: "200px" }}>
+                <td>{i + 1}</td>
+                <td>{row.title}</td>
+                <td>{row.description}</td>
+                <td>
                   {row.tags &&
                     row.tags.map((tag, i) => (
                       <span key={i}>

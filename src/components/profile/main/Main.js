@@ -57,7 +57,7 @@ function Main() {
 
   return (
     <div className={classes.main}>
-      <div className={classes.container}>
+      <div className={classes.content}>
         <MainHeader
           setReload={setReload}
           title={title}
@@ -67,17 +67,18 @@ function Main() {
           reload={reload}
           tags={tags}
         />
-        {loading && !posts && <p>Loading...</p>}
-        {!loading && posts && posts.posts.length === 0 && <p>No data</p>}
-        {!loading && posts && posts.posts && (
-          <Table
-            setReload={setReload}
-            posts={posts.posts}
-            tags={tags}
-            reload={reload}
-          />
-        )}
-
+        <div className={classes.container}>
+          {loading && !posts && <p>Loading...</p>}
+          {!loading && posts && posts.posts.length === 0 && <p>No data</p>}
+          {!loading && posts && posts.posts && (
+            <Table
+              setReload={setReload}
+              posts={posts.posts}
+              tags={tags}
+              reload={reload}
+            />
+          )}
+        </div>
         {!loading && posts && (
           <Pagination
             setPage={setPage}
